@@ -1,0 +1,284 @@
+.swap-page {
+  margin: 4rem 1.5rem 5rem 1.5rem;
+  .area-chain-to-chain {
+    .button-chain {
+      background: #fff;
+      box-shadow: 0px 10px 21px rgba(0, 173, 232, 0.13);
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+      padding: 2rem;
+      .token-source {
+        h3 {
+          font-weight: bold;
+        }
+      }
+      .token-dest {
+        h3 {
+          font-weight: bold;
+        }
+      }
+      .icon-token {
+        margin-right: 6px;
+        margin-bottom: 2px;
+      }
+    }
+
+    .wallets-area {
+      margin: 2rem 0rem;
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0px 10px 21px rgba(0, 173, 232, 0.13);
+      .text-source-dest {
+        margin: 0.5rem 0 0.5rem 0;
+        h2 {
+          font-size: 1.45em;
+          font-weight: bold;
+          color: #56b0fb;
+        }
+      }
+      .list-wallets {
+        .info-wallet {
+          cursor: pointer;
+          margin: 0 0.5em;
+          h4 {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .symbol-arrow-wallet {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .content-swap {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 21px rgba(0, 173, 232, 0.13);
+    padding: 1.5rem;
+
+    .input-and-select-token {
+      .token-source-dest {
+        padding: 1rem;
+        border-radius: 20px;
+        border: 1px solid#f0f2f5;
+        background-color: rgb(255, 255, 255);
+        margin: 1.5rem 0;
+        .box-input-token {
+          display: flex;
+          flex-flow: row nowrap;
+          -webkit-box-align: center;
+          align-items: center;
+          .ant-input:focus,
+          .ant-input-focused {
+            border-color: none;
+            box-shadow: none;
+          }
+          .input-token {
+            color: rgb(0, 0, 0);
+            width: 0px;
+            position: relative;
+            font-weight: 500;
+            outline: none;
+            border: none;
+            flex: 1 1 auto;
+            background-color: rgb(255, 255, 255);
+            font-size: 24px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0px;
+            appearance: textfield;
+          }
+
+          .button-select-token {
+            -webkit-box-align: center;
+            align-items: center;
+            height: 2.2rem;
+            font-size: 20px;
+            font-weight: 500;
+            color: rgb(0, 0, 0);
+            border-radius: 12px;
+            box-shadow: none;
+            outline: none;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid rgba(24, 144, 255, 0.52);
+            border-style: dashed;
+            .ant-select-selector {
+              background-color: transparent;
+              cursor: pointer;
+              border: none;
+              box-shadow: none;
+              .ant-select-selection-search {
+                .ant-select-selection-search-input {
+                  cursor: pointer;
+                }
+              }
+              .ant-select-selection-placeholder {
+                font-size: 1rem;
+              }
+            }
+          }
+
+          .button-select-token:hover .ant-select-selector {
+            background-color: transparent;
+          }
+        }
+      }
+
+      .symbol-arrow-down {
+        font-size: large;
+        .icon-down {
+          cursor: pointer;
+        }
+      }
+
+      .ant-input {
+        border-radius: 10px;
+      }
+    }
+
+    .label-input-token {
+      display: flex;
+      flex-flow: row nowrap;
+      -webkit-box-align: center;
+      align-items: center;
+      color: rgb(0, 0, 0);
+      font-size: 0.75rem;
+      padding-bottom: 0.5rem;
+
+      .css-1rhdhic {
+        box-sizing: border-box;
+        margin: 0px;
+        min-width: 0px;
+        font-weight: 500;
+        font-size: 14px;
+        color: rgb(86, 90, 105);
+        font-weight: bold;
+      }
+    }
+
+    .button-swap {
+      margin-top: 2rem;
+      .swap-button {
+        padding: 18px;
+        width: 100%;
+        font-weight: 500;
+        text-align: center;
+        border-radius: 12px;
+        outline: none;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        -webkit-box-align: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        background-color: rgb(255, 104, 113);
+        border: 1px solid rgb(255, 104, 113);
+        .css-10ob8xa {
+          box-sizing: border-box;
+          margin: 0px;
+          min-width: 0px;
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        &:disabled {
+          background-color: rgb(237, 238, 242);
+          color: rgb(136, 141, 155);
+          cursor: auto;
+          box-shadow: none;
+          border: 1px solid transparent;
+          outline: none;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .enable-road {
+    opacity: 1;
+  }
+
+  .disable-road {
+    opacity: 0.5;
+  }
+}
+
+.button-use-my-address {
+  color: rgb(0, 173, 232);
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.ant-select-dropdown {
+  border-radius: 10px;
+  .ant-select-item-option-content {
+    .img-icon-token-select-option {
+      width: 24px;
+      height: 24px;
+      box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 10px;
+      border-radius: 24px;
+    }
+  }
+}
+
+.img-icon-token-select-option {
+  width: 24px;
+  height: 24px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 6px 10px;
+  border-radius: 24px;
+  margin: 0px 5px;
+}
+
+.icon-wallet {
+  width: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.balance {
+  margin-left: 0px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .swap-page {
+    margin: 3rem 1.5rem;
+    .area-chain-to-chain {
+      .button-chain {
+        padding: 1rem;
+      }
+      .wallets-area {
+        .text-source-dest {
+          margin: 0.5rem 0 0.5rem 0;
+          h2 {
+            font-size: 1.3em;
+          }
+        }
+        .symbol-arrow-wallet {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
